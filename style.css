@@ -1,0 +1,127 @@
+.html,
+input {
+    all: unset;
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    margin-top: 10px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+}
+
+input:focus input:active {
+    border: 1px solid rgb(38, 38, 38, 0.4);
+}
+
+button {
+    background: rgba(0, 149, 246, 0.3);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+
+body {
+    margin: 0;
+    background-color: #fafafa;
+    font-family: 'helvetica', sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.left {
+    height: 700px;
+    width: 430px;
+
+}
+
+.leftImage {
+    display: flex;
+    flex-direction: row;
+    margin-top: -150px;
+    margin-left: -550px;
+    height: 1200px;
+}
+
+#slideShow img {
+    position: absolute;
+}
+
+.content .images {
+    height: 100%;
+    width: 100%;
+}
+
+
+.slideShow-img {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.transition {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 10.86in){
+    .left{
+     display: none;}
+     .right{
+        align-items: center;
+     }
+
+     .topFooter{
+        width: 450px;
+     }
+
+     .topFooter, p{
+        font-size: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bottomFooter, p{
+        font-size: 12px;
+    }
+
+    .mainFooter{
+        align-content: center;
+    }
+
+    /* p{
+        font-size: 12px;
+        gap: 10px;
+    } */
+    }
+
+@media only screen and (max-width: 9in){
+   
+   
+    .left{
+        display: none;}
+        .right{
+           align-items: center;
+           border: none;
+        }
+
+        .topFooter{
+           width: 420px;
+           margin-top: -20px;
+        }
+   
+        .topFooter, p{
+           font-size: 10px;
+           flex-wrap: wrap;
+           justify-content: center;
+       }
+       .bottomFooter, p{
+           font-size: 10px;
+       }
+
+       .mainFooter{
+           align-content: center;
+       }
+    }
